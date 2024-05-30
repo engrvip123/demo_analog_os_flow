@@ -1,0 +1,30 @@
+v {xschem version=3.4.3 file_version=1.2
+}
+G {}
+K {type=subcircuit
+xformat="@name @pinlist @symname"
+format="@name @@out @@inp @@vdd @@vss @symname"
+spice_sym_def=".include cs_pex.spice"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 4 200 -130 200 -70 {}
+L 4 200 -100 220 -100 {}
+L 4 60 -100 80 -100 {}
+L 4 80 -130 200 -130 {}
+L 4 80 -70 200 -70 {}
+L 4 80 -130 80 -70 {}
+L 7 140 -150 140 -130 {}
+L 7 140 -70 140 -50 {}
+B 5 137.5 -152.5 142.5 -147.5 {name=vdd dir=inout}
+B 5 217.5 -102.5 222.5 -97.5 {name=out dir=out}
+B 5 57.5 -102.5 62.5 -97.5 {name=inp dir=in}
+B 5 137.5 -52.5 142.5 -47.5 {name=vss dir=inout}
+T {@symname} 113 -106 0 0 0.2 0.2 {}
+T {@name} 205 -142 0 0 0.2 0.2 {}
+T {vdd} 145 -124 0 1 0.2 0.2 {}
+T {out} 195 -104 0 1 0.2 0.2 {}
+T {inp} 85 -104 0 0 0.2 0.2 {}
+T {vss} 125 -76 2 1 0.2 0.2 {}

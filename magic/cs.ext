@@ -1,0 +1,69 @@
+timestamp 1695798251
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use sky130_fd_pr__nfet_01v8_WUV6BX XM1 1 0 704 0 1 1107
+use sky130_fd_pr__res_xhigh_po_2p85_RYTYPJ sky130_fd_pr__res_xhigh_po_2p85_RYTYPJ_0 -1 0 659 0 1 2613
+port "inp" 0 -342 1102 -142 1302 m1
+port "out" 1 1800 1710 2000 1910 v
+port "vdd" 2 540 3546 740 3746 v
+port "vss" 3 588 258 788 458 m1
+node "inp" 6 1270.25 -342 1102 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 297352 7860 0 0 0 0 0 0 0 0 0 0
+node "out" 5 2297.24 1800 1710 v 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 384920 6760 1085936 8468 0 0 0 0 0 0 0 0
+node "vdd" 1 1252.93 540 3546 v 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 231420 2620 557104 3220 0 0 0 0 0 0 0 0
+node "vss" 122 1313.34 588 258 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21024 972 149108 4632 375804 4068 0 0 0 0 0 0 0 0
+node "li_430_1598#" 14 407.24 430 1598 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 132012 1456 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "inp" "vss" 726.405
+cap "li_430_1598#" "out" 206.556
+cap "inp" "out" 750.259
+cap "inp" "li_430_1598#" 85.2413
+cap "out" "vdd" 123.12
+cap "li_430_1598#" "vdd" 2.87983
+cap "inp" "vdd" 0.034541
+cap "vss" "out" 177.438
+cap "vss" "li_430_1598#" 10.7644
+cap "XM1/a_498_n438#" "sky130_fd_pr__res_xhigh_po_2p85_RYTYPJ_0/a_n285_n575#" 352.503
+cap "sky130_fd_pr__res_xhigh_po_2p85_RYTYPJ_0/a_n285_143#" "sky130_fd_pr__res_xhigh_po_2p85_RYTYPJ_0/a_n285_n575#" 0.0472409
+cap "sky130_fd_pr__res_xhigh_po_2p85_RYTYPJ_0/a_n285_n575#" "sky130_fd_pr__res_xhigh_po_2p85_RYTYPJ_0/a_n415_n705#" 839.336
+cap "sky130_fd_pr__res_xhigh_po_2p85_RYTYPJ_0/a_n285_143#" "XM1/a_498_n438#" 0.57425
+cap "XM1/a_498_n438#" "sky130_fd_pr__res_xhigh_po_2p85_RYTYPJ_0/a_n415_n705#" 329.591
+cap "sky130_fd_pr__res_xhigh_po_2p85_RYTYPJ_0/a_n415_n705#" "XM1/a_498_n438#" 71.1582
+cap "sky130_fd_pr__res_xhigh_po_2p85_RYTYPJ_0/a_n285_n575#" "XM1/a_498_n438#" 66.8044
+cap "sky130_fd_pr__res_xhigh_po_2p85_RYTYPJ_0/a_n285_n575#" "sky130_fd_pr__res_xhigh_po_2p85_RYTYPJ_0/a_n415_n705#" 208.48
+cap "sky130_fd_pr__res_xhigh_po_2p85_RYTYPJ_0/a_n415_n705#" "sky130_fd_pr__res_xhigh_po_2p85_RYTYPJ_0/a_n285_n575#" -8.66678
+cap "sky130_fd_pr__res_xhigh_po_2p85_RYTYPJ_0/a_n415_n705#" "sky130_fd_pr__res_xhigh_po_2p85_RYTYPJ_0/a_n285_143#" 6.14888
+cap "sky130_fd_pr__res_xhigh_po_2p85_RYTYPJ_0/a_n285_n575#" "sky130_fd_pr__res_xhigh_po_2p85_RYTYPJ_0/a_n285_143#" -50.1494
+cap "XM1/a_498_n438#" "sky130_fd_pr__res_xhigh_po_2p85_RYTYPJ_0/a_n285_n575#" 1.45588
+cap "XM1/a_498_n438#" "sky130_fd_pr__res_xhigh_po_2p85_RYTYPJ_0/a_n285_143#" 0.0363881
+cap "sky130_fd_pr__res_xhigh_po_2p85_RYTYPJ_0/a_n285_n575#" "sky130_fd_pr__res_xhigh_po_2p85_RYTYPJ_0/a_n415_n705#" 9.48246
+cap "sky130_fd_pr__res_xhigh_po_2p85_RYTYPJ_0/a_n285_143#" "sky130_fd_pr__res_xhigh_po_2p85_RYTYPJ_0/a_n415_n705#" 34.4992
+merge "sky130_fd_pr__res_xhigh_po_2p85_RYTYPJ_0/a_n415_n705#" "XM1/a_443_n350#" -1147.99 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -39982 -2618 -44620 -2400 0 0 0 0 0 0 0 0 0 0
+merge "XM1/a_443_n350#" "VSUBS"
+merge "VSUBS" "XM1/a_207_n350#"
+merge "XM1/a_207_n350#" "XM1/a_n29_n350#"
+merge "XM1/a_n29_n350#" "XM1/a_n265_n350#"
+merge "XM1/a_n265_n350#" "XM1/a_n501_n350#"
+merge "XM1/a_n501_n350#" "XM1/a_n721_n524#"
+merge "XM1/a_n721_n524#" "vss"
+merge "vss" "li_430_1598#"
+merge "sky130_fd_pr__res_xhigh_po_2p85_RYTYPJ_0/a_n285_n575#" "XM1/a_561_n350#" -1331.9 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -280504 -5452 0 0 0 0 0 0 0 0 0 0
+merge "XM1/a_561_n350#" "XM1/a_325_n350#"
+merge "XM1/a_325_n350#" "XM1/a_89_n350#"
+merge "XM1/a_89_n350#" "XM1/a_n147_n350#"
+merge "XM1/a_n147_n350#" "XM1/a_n383_n350#"
+merge "XM1/a_n383_n350#" "XM1/a_n619_n350#"
+merge "XM1/a_n619_n350#" "out"
+merge "XM1/a_498_n438#" "XM1/a_380_n438#" -645.513 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -53360 -4160 0 0 0 0 0 0 0 0 0 0
+merge "XM1/a_380_n438#" "XM1/a_262_n438#"
+merge "XM1/a_262_n438#" "XM1/a_144_n438#"
+merge "XM1/a_144_n438#" "XM1/a_26_n438#"
+merge "XM1/a_26_n438#" "XM1/a_n92_n438#"
+merge "XM1/a_n92_n438#" "XM1/a_n210_n438#"
+merge "XM1/a_n210_n438#" "XM1/a_n328_n438#"
+merge "XM1/a_n328_n438#" "XM1/a_n446_n438#"
+merge "XM1/a_n446_n438#" "XM1/a_n564_n438#"
+merge "XM1/a_n564_n438#" "inp"
+merge "sky130_fd_pr__res_xhigh_po_2p85_RYTYPJ_0/a_n285_143#" "vdd" -547.325 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -174034 -1670 0 0 0 0 0 0 0 0 0 0

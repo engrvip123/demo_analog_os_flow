@@ -1,0 +1,58 @@
+
+Circuit 1 cell sky130_fd_pr__res_xhigh_po_2p85 and Circuit 2 cell sky130_fd_pr__res_xhigh_po_2p85 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__res_xhigh_po_2p85 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__res_xhigh_po_2p85 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__res_xhigh_po_2p85 |Circuit 2: sky130_fd_pr__res_xhigh_po_2p85 
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__res_xhigh_po_2p85 and sky130_fd_pr__res_xhigh_po_2p85 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_2p85_53STJD in circuit cs (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_WUV6BX in circuit cs (0)(1 instance)
+
+Cell cs (0) disconnected node: out
+Class cs (0):  Merged 9 parallel devices.
+Cell cs (0) disconnected node: out
+Subcircuit summary:
+Circuit 1: cs                              |Circuit 2: cs                              
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__res_xhigh_po_2p85 (1)        |sky130_fd_pr__res_xhigh_po_2p85 (1)        
+sky130_fd_pr__nfet_01v8 (10->1)            |sky130_fd_pr__nfet_01v8 (1)                
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely with port errors.
+
+Subcircuit pins:
+Circuit 1: cs                              |Circuit 2: cs                              
+-------------------------------------------|-------------------------------------------
+inp                                        |inp                                        
+vdd                                        |vdd                                        
+vss                                        |vss                                        
+(no matching pin)                          |out                                        
+out                                        |(no matching pin)                          
+---------------------------------------------------------------------------------------
+Cell pin lists for cs and cs altered to match.
+Device classes cs and cs are equivalent.
+
+Final result: Top level cell failed pin matching.

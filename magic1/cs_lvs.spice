@@ -1,0 +1,28 @@
+* NGSPICE file created from cs.ext - technology: sky130A
+
+.subckt sky130_fd_pr__res_xhigh_po_2p85_53STJD a_n285_n559# a_n415_n689# a_n285_127#
+X0 a_n285_127# a_n285_n559# a_n415_n689# sky130_fd_pr__res_xhigh_po_2p85 l=1.43
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_WUV6BX a_26_n438# a_207_n350# a_n29_n350# a_89_n350#
++ a_n210_n438# a_n564_n438# a_n721_n524# a_n92_n438# a_n501_n350# a_380_n438# a_n446_n438#
++ a_561_n350# a_n383_n350# a_262_n438# a_n328_n438# a_443_n350# a_n265_n350# a_n619_n350#
++ a_498_n438# a_144_n438# a_325_n350# a_n147_n350#
+X0 a_325_n350# a_262_n438# a_207_n350# a_n721_n524# sky130_fd_pr__nfet_01v8 ad=0.5075 pd=3.79 as=0.5075 ps=3.79 w=3.5 l=0.3
+X1 a_n265_n350# a_n328_n438# a_n383_n350# a_n721_n524# sky130_fd_pr__nfet_01v8 ad=0.5075 pd=3.79 as=0.5075 ps=3.79 w=3.5 l=0.3
+X2 a_561_n350# a_498_n438# a_443_n350# a_n721_n524# sky130_fd_pr__nfet_01v8 ad=1.015 pd=7.58 as=0.5075 ps=3.79 w=3.5 l=0.3
+X3 a_89_n350# a_26_n438# a_n29_n350# a_n721_n524# sky130_fd_pr__nfet_01v8 ad=0.5075 pd=3.79 as=0.5075 ps=3.79 w=3.5 l=0.3
+X4 a_207_n350# a_144_n438# a_89_n350# a_n721_n524# sky130_fd_pr__nfet_01v8 ad=0.5075 pd=3.79 as=0.5075 ps=3.79 w=3.5 l=0.3
+X5 a_n501_n350# a_n564_n438# a_n619_n350# a_n721_n524# sky130_fd_pr__nfet_01v8 ad=0.5075 pd=3.79 as=1.015 ps=7.58 w=3.5 l=0.3
+X6 a_n147_n350# a_n210_n438# a_n265_n350# a_n721_n524# sky130_fd_pr__nfet_01v8 ad=0.5075 pd=3.79 as=0.5075 ps=3.79 w=3.5 l=0.3
+X7 a_443_n350# a_380_n438# a_325_n350# a_n721_n524# sky130_fd_pr__nfet_01v8 ad=0.5075 pd=3.79 as=0.5075 ps=3.79 w=3.5 l=0.3
+X8 a_n383_n350# a_n446_n438# a_n501_n350# a_n721_n524# sky130_fd_pr__nfet_01v8 ad=0.5075 pd=3.79 as=0.5075 ps=3.79 w=3.5 l=0.3
+X9 a_n29_n350# a_n92_n438# a_n147_n350# a_n721_n524# sky130_fd_pr__nfet_01v8 ad=0.5075 pd=3.79 as=0.5075 ps=3.79 w=3.5 l=0.3
+.ends
+
+.subckt cs out inp vdd vss
+XXR2 out vss vdd sky130_fd_pr__res_xhigh_po_2p85_53STJD
+XXM1 inp vss vss out inp inp vss inp vss inp inp out out inp inp vss vss out inp inp
++ out out sky130_fd_pr__nfet_01v8_WUV6BX
+.ends
+

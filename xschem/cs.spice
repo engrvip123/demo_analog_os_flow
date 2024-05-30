@@ -1,0 +1,7 @@
+** sch_path: /home/vks/design/xschem/cs.sch
+.subckt cs inp out vdd vss
+*.PININFO inp:I out:O vdd:B vss:B
+XM1 out inp vss vss sky130_fd_pr__nfet_01v8 L=0.30 W=35 nf=10 m=1
+XR2 out vdd vss sky130_fd_pr__res_xhigh_po_2p85 L=1.43 mult=1 m=1
+.ends
+.end
